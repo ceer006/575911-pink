@@ -36,67 +36,67 @@
         <h1 class="visually-hidden">Описание приложение Pink</h1>
         <section class="app">
             <img class="app__device" src="img/device.jpg" alt="приложение в телефоне">
-            <button class="app__button" type="button">Скачать приложение</button>
-            <ul class="OS">
-                <li class="OS__item">
-                    <a href="apple.com">apple</a>
+            <a class="app__button" href="#">Скачать приложение</a>
+            <ul class="app__list">
+                <li class="app__item">
+                    <a class="app__link" href="apple.com">apple</a>
                 </li>
-                <li class="OS__item">
-                    <a href="android.com">android</a>
+                <li class="app__item">
+                    <a class="app__link" href="android.com">android</a>
                 </li>
-                <li class="OS__item">
-                    <a href="windows.com">windows</a>
+                <li class="app__item">
+                    <a class="app__link" href="windows.com">windows</a>
                 </li>
             </ul>
-            <p class="app__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </section>
         <section class="advantages">
-            <h2 class="advantages_title">Устали от серости мегаполиса? <br> Нам есть, что вам предложить!</h2>
+            <h2 class="advantages_title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
             <ul class="advantages__list">
                 <li class="advantages__item">
                     <h2 class="advantages__title">Поднимает настроение</h2>
-                    <p class="advantages__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </li>
                 <li class="advantages__item">
                     <h2 class="advantages__title">Меняет мир вокруг</h2>
-                    <p class="advantages__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </li>
                 <li class="advantages__item">
                     <h2 class="advantages__title">Заводит новых друзей</h2>
-                    <p class="advantages__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                    <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
             </ul>
             <img class="advantages_device" src="img/device-pink.jpg" alt="приложение в телефоне">
         </section>
         <section class="reviews">
-            <div class="slider-controls">
-                <i class="slider-controls__active"></i>
-                <i></i>
-                <i></i>
-            </div>
             <ul class="reviews__list">
                 <li class="reviews__item">
                     <h3 class="reviews__title">Николай Петров</h3>
-                    <p class="reviews_desc">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    <p class="reviews_description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </li>
             </ul>
+            <div class="slider-controls">
+                <i class="slider-controls__active"></i>
+                <i class="slider-controls__noactive"></i>
+                <i class="slider-controls__noactive"></i>
+            </div>
         </section>
         <section class="price">
             <ul class="price__list">
                 <li class="price__item">
-                    <table class="price__data">
-                        <caption class="price__data-title">стандарт<br>3.99 USD</caption>
-                        <tr class="price__table">
-                            <th class="price__table-item">розовый фильтр</th>
-                            <td class="price__table-check"></td>
+                    <table class="price__table">
+                        <caption class="price__table-title">стандарт 3.99 USD</caption>
+                        <tr class="price__table-row">
+                            <th class="price__table-header">розовый фильтр</th>
+                            <td class="price__data-check"></td>
                         </tr>
-                        <tr class="price__table">
-                            <th class="price__table-item">смайлики</th>
-                            <td class="price__table-check"></td>
+                        <tr class="price__table-row">
+                            <th class="price__table-header">смайлики</th>
+                            <td class="price__data-check"></td>
                         </tr>
-                        <tr class="price__table">
-                            <th class="price__table-item">комментарии</th>
-                            <td class="price__table-X"></td>
+                        <tr class="price__table-row">
+                            <th class="price__table-header">комментарии</th>
+                            <td class="price__data-nocheck"></td>
                         </tr>
                     </table>
                 </li>
@@ -110,15 +110,15 @@
         <section class="contacts">
             <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
             <div class="contacts__call">
-                <b>Звоните:</b>
-                <p>+7 (812) 555-66-66</p>
+                <p>Звоните:</p>
+                <a href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts__email">
-                <b>Пишите:</b>
-                <p>mail@htmlacademy.ru</p>
+                <p>Пишите:</p>
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts__adress">
-                <b>Приезжайте в гости:</b>
+                <p>Приезжайте в гости:</p>
                 <p>ул. Большая Конюшенная, 19/8</p>
             </div>
         </section>
