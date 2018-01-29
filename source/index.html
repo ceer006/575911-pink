@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<body>
+    <header class="page-header">
+        <a class="page-header__logo">
+            <img class="page-header__logo-page" src="img/logotype-mobile.svg" alt="логотип сайта">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site-list__item--active">
+                        <a>Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="photo.html">Фотографии</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="form.html">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  </body>
+    <main class="page-main">
+        <h1 class="visually-hidden">Описание приложение Pink</h1>
+        <section class="app">
+            <img class="app__device" src="img/device.jpg" alt="приложение в телефоне">
+            <a class="app__button" href="#">Скачать приложение</a>
+            <ul class="app__list">
+                <li class="app__item">
+                    <a class="app__link" href="apple.com">apple</a>
+                </li>
+                <li class="app__item">
+                    <a class="app__link" href="android.com">android</a>
+                </li>
+                <li class="app__item">
+                    <a class="app__link" href="windows.com">windows</a>
+                </li>
+            </ul>
+            <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </section>
+        <section class="advantages">
+            <h2 class="advantages_title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <h2 class="advantages__title">Поднимает настроение</h2>
+                    <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="advantages__item">
+                    <h2 class="advantages__title">Меняет мир вокруг</h2>
+                    <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+                <li class="advantages__item">
+                    <h2 class="advantages__title">Заводит новых друзей</h2>
+                    <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+            </ul>
+            <img class="advantages_device" src="img/device-pink.jpg" alt="приложение в телефоне">
+        </section>
+        <section class="reviews">
+            <ul class="reviews__list">
+                <li class="reviews__item">
+                    <h3 class="reviews__title">Николай Петров</h3>
+                    <p class="reviews_description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+            </ul>
+            <div class="reviews__slider-controls">
+                <i class="reviews__slider-controls-item reviews__slider-controls-item--active"></i>
+                <i class="reviews__slider-controls-item"></i>
+                <i class="reviews__slider-controls-item"></i>
+            </div>
+        </section>
+        <section class="price">
+            <ul class="price__list">
+                <li class="price__item">
+                    <table class="price__table">
+                        <caption class="price__table-title">стандарт 3.99 USD</caption>
+                        <tr class="price__table-row">
+                            <th class="price__table-header">розовый фильтр</th>
+                            <td class="price__data-check"></td>
+                        </tr>
+                        <tr class="price__table-row">
+                            <th class="price__table-header">смайлики</th>
+                            <td class="price__data-check"></td>
+                        </tr>
+                        <tr class="price__table-row">
+                            <th class="price__table-header">комментарии</th>
+                            <td class="price__data-nocheck"></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <div class="price__slider-controls">
+                <i class="price__slider-controls-item price__slider-controls-item--active"></i>
+                <i class="price__slider-controls-item"></i>
+                <i class="price__slider-controls-item"></i>
+            </div>
+        </section>
+        <section class="contacts">
+            <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+            <div class="contacts__call">
+                <p>Звоните:</p>
+                <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__email">
+                <p>Пишите:</p>
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__adress">
+                <p>Приезжайте в гости:</p>
+                <p>ул. Большая Конюшенная, 19/8</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
 </html>
