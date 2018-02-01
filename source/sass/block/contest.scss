@@ -1,0 +1,48 @@
+.contest__attainment-list-item,
+.contest__app-list-item {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #283645;
+}
+
+.contest__submit {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #ffffff;
+
+    background-color: #2aab6d;
+}
+
+.contest__title {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #d22856;
+    text-transform: uppercase;
+}
+
+.contest__label {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #d22856;
+    text-transform: uppercase;
+}
+
+.contest__attainment-list,
+.contest__app-list {
+    list-style: none;
+
+    background-color: #f2f2f2;
+}
+
+.contest__attainment,
+.contest__app {
+    background-color: #f2f2f2;
+}
