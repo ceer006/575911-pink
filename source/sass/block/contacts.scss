@@ -1,23 +1,54 @@
+.contacts {
+  margin-top: 45px;
+  text-align: center;
+}
+
 .contacts__title,
 .contacts__call-description {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 28.8px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.8px;
 }
 
 .contacts__title {
-    color: #283645;
+  color: #283645;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
 }
 
 .contacts__call-description {
-    color: #d22856;
+  color: #d22856;
+  margin: 0;
+  padding: 0 15px;
+  text-decoration: none;
 }
 
 .contacts__call-text {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.6px;
-    color: #283645;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  color: #283645;
+
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__call,
+.contacts__email {
+  margin-bottom: 25px;
+}
+
+.contacts__adress {
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

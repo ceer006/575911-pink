@@ -1,35 +1,111 @@
-.user-photo {
+.user-photo__item-wrapper,
+.user-panorama__item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  margin-top: -4px;
+  margin-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
   background-color: #f2f2f2;
 }
 
 .user-photo__nikname {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #283645;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #283645;
+}
+
+.user-photo__wrapper,
+ {
+  text-align: center;
 }
 
 .user-photo__public-time {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 24px;
-    color: #283645;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #283645;
 }
 
 .user-photo__description {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #283645;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 280px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+  color: #283645;
 }
 
 .user-photo__cool {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #d22856;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #d22856;
+}
+
+.user-photo__like {
+  margin: 0;
+  margin-left: 14px;
+  padding: 0;
+  border: none;
+  width: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo__wrapper {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .user-panorama__item-wrapper{
+    width: 620px;
+    .user-photo__description {
+      width: 100%;
+      order: 1;
+    }
+    .user-photo__like {
+      margin-left: auto;
+    }
+  }
+  .user-photo__item-wrapper {
+    margin-left: 0;
+    min-height: 155px;
+  }
+  .user-photo__item-wrapper {
+    .user-photo__like {
+      order: 1;
+      margin-left: auto;
+      margin-right: 20px;
+    }
+    .user-photo__cool {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-panorama__item-wrapper {
+    width: 940px;
+    margin-left: 10px;
+  }
 }
