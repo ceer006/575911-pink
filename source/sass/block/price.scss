@@ -1,0 +1,112 @@
+.price {
+  background-color: #f2f2f2;
+}
+
+.price__table {
+  border-collapse: collapse;
+}
+
+.price__table-option:first-of-type {
+  border: none;
+}
+
+.price__table-row-package {
+  background-color: #283645;
+  border-right: 2px solid #ffffff;
+}
+
+.price__table-row-package-name {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.price__table-row-package-cost {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.price__table-option {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+
+.price__table-icon {
+  padding: 0;
+  margin: 8px;
+
+}
+
+.price__table-icon--yes {
+  background-image: url("../img/icon-yes.svg");
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.price__table-icon--no {
+  background-image: url("../img/icon-no.svg");
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.price__table-row,
+.price__table-option,
+.price__table-cell {
+  border: 2px solid #e5e5e5;
+}
+
+@media (max-width: $mobile-width) {
+  .price__table-option--mobile {
+      display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price__table {
+    margin: 0 20px;
+    width: 620px;
+  }
+  .price__table-option--no-mobile {
+    display: none;
+  }
+  .price__table-option--mobile {
+    width: 155px;
+  }
+  .price__table-row-package {
+    width: 155px;
+    height: 80px;
+  }
+  .price__table-icon {
+    text-align: center;
+  }
+  .price__table-option--mobile {
+    padding-left: 15px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #283645;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__table {
+    margin: 0 10px;
+    width: 940px;
+  }
+}

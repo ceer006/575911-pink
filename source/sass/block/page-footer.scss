@@ -1,0 +1,18 @@
+.page-footer {
+margin-top: 40px;
+text-align: center;
+margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+  .page-footer .inner {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}

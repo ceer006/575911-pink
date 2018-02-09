@@ -1,17 +1,22 @@
-.main-form-page__title {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 28.8px;
-    color: #ffffff;
-
-    background-image: url("../../img/bg-back-mobile@1x.jpg")
+.main-form-page__text {
+  margin: 0 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
 }
 
-.main-form-page__text {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #283645;
+.main-form-page__text:last-of-type{
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form-page__text {
+    padding: 0 95px;
+  }
+  .main-form-page__text:last-of-type{
+    display: block;
+  }
 }

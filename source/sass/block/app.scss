@@ -1,28 +1,109 @@
-.app__device {
-    background-image: url("../../img/bg-back-mobile@1x.jpg")
+.app {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.app--closed {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left 175px, url("../img/bg-back-mobile@1x.jpg") no-repeat left top;
+  margin-top: -70px;
+  min-height: 462px;
+  padding-top: 462px;
+}
+
+.app--opened,
+.visually-hidden + .app--nojs {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left 175px, url("../img/bg-back-mobile@1x.jpg") no-repeat left top;
+  margin-top: -18px;
+  min-height: 462px;
+  padding-top: 462px;
+}
+
+.app__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .app__button {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    color: #ffffff;
-    text-decoration: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 2px solid #ffffff;
+  display: block;
+  width: 280px;
+  height: 55px;
+  padding: 14px 36px;
+  border-radius: 50px;
+  margin-left: 20px;
 }
 
 .app__wrapper {
-    background-color: #1d2631;
+  background-color: #1d2631;
+  padding-top: 20px;
 }
 
 .app__list {
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+.app__item {
+  margin-right: 35px;
 }
 
 .app__description {
+  margin: 0 20px;
+  padding-bottom: 35px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+@media (max-width: $mobile-width) {
+  .app__title {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .app--closed,
+  .app--opened {
+    padding-top: 52px;
+    width: 300px;
+  }
+  .app__title {
     font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    color: #ffffff;
+  font-size: 40px;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+  }
+  .app__button {
+    width: 300px;
+    margin-left: 0;
+  }
+  .app__device {
+    order: 2;
+  }
+  .app__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
 }

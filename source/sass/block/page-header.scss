@@ -1,3 +1,47 @@
-.page-header {
-    background-color: #283645;
+.page-header__wrapper--closed {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 237px;
+  margin-top: -85px;
+  margin-bottom: 45px;
+}
+
+.page-header__wrapper--opened,
+.main-nav + .page-header__wrapper--nojs {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 237px;
+  margin-top: -18px;
+  margin-bottom: 45px;
+}
+
+.page-header__logo {
+  display: block;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  margin-bottom: -18px;
+  text-align: start;
+  border-bottom: 1px solid #000000;
+}
+
+.page-header__title {
+  padding-top: 100px;
+  padding-left: 10px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.8px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
