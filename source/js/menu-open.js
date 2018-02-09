@@ -4,8 +4,8 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var navwrap = document.querySelector('.main-nav__logo-wrapper');
 var app = document.querySelector('.app');
 
- navMain.classList.remove('main-nav--nojs');
- app.classList.remove('app--nojs');
+navMain.classList.remove('main-nav--nojs');
+app.classList.remove('app--nojs');
 
 navToggle.addEventListener('click', function() {
   if (navList.classList.contains('site-list--closed')) {
