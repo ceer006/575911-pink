@@ -6,6 +6,7 @@
   // text-transform: uppercase;
 
   margin: 0 auto;
+  // background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__background--closed {
@@ -70,11 +71,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__logo-wrapper {
 
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
+  .main-nav .inner{
     display: flex;
   }
   .main-nav__toggle {
