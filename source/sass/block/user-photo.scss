@@ -74,13 +74,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .user-panorama__item-wrapper{
     width: 620px;
-    .user-photo__nikname,
-    .user-photo__description {
-      margin-left: 20px;
-    }
+    margin-left: 20px;
+
     .user-photo__cool {
       margin-right: 40px;
     }
@@ -117,6 +117,6 @@
   }
   .user-photo__wrapper {
     margin: 0 10px;
-    width: 100%;
+    width: 940px;
   }
 }
