@@ -83,9 +83,11 @@
   .price__table-option--mobile {
       display: none;
   }
-  // .price__table-cell {
-  //   display: flex;
-  // }
+  .price__table-cell {
+    display: flex;
+    height: 60px;
+    align-items: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -114,11 +116,29 @@
     line-height: 30px;
     color: #283645;
   }
+  .price__table-cell {
+    position: relative;
+    height: 45px;
+  }
+  .price__table-icon {
+    position: absolute;
+    left: 42%;
+    top: 15%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .price__table {
     margin: 0 10px;
     width: 940px;
+  }
+  .price__table-cell {
+    position: relative;
+    height: 60px;
+  }
+  .price__table-icon {
+    position: absolute;
+    left: 45%;
+    top: 25%;
   }
 }

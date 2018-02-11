@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   width: 280px;
   margin-top: -4px;
-  margin-left: 20px;
   padding-top: 15px;
   padding-bottom: 25px;
   margin-bottom: 15px;
@@ -67,20 +66,28 @@
   padding: 0;
   border: none;
   width: 25px;
+  background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
   .user-photo__wrapper {
-    margin: 0 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .user-panorama__item-wrapper{
     width: 620px;
+    .user-photo__nikname,
+    .user-photo__description {
+      margin-left: 20px;
+    }
+    .user-photo__cool {
+      margin-right: 40px;
+    }
     .user-photo__description {
       width: 100%;
       order: 1;
+      margin-right: 40px;
     }
     .user-photo__like {
       margin-left: auto;
@@ -106,5 +113,10 @@
   .user-panorama__item-wrapper {
     width: 940px;
     margin-left: 10px;
+    margin-right: 10px;
+  }
+  .user-photo__wrapper {
+    margin: 0 10px;
+    width: 100%;
   }
 }
