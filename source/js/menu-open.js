@@ -27,4 +27,4 @@ navToggle.addEventListener('click', function() {
     app.classList.remove('app--opened');
     app.classList.add('app--closed');
   }
-  });
+});

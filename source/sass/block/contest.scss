@@ -127,6 +127,16 @@
   border: none;
 }
 
+.contest__wrapper {
+  margin-left: -20px;
+  margin-right: -20px;
+  .contest__app,
+  .contest__attainment {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 .contest__full-name,
 .contest__wrapper,
 .contest__contacts,

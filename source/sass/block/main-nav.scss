@@ -9,11 +9,14 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.main-nav__inner {
+  position: relative;
+}
+
 .main-nav__background--closed {
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat left bottom;
   margin-top: -70px;
   min-height: 462px;
-
 }
 
 .main-nav__logo {
