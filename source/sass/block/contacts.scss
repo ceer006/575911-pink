@@ -45,6 +45,15 @@
   margin-bottom: 40px;
 }
 
+.contacts__email .contacts__call-description:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+
+.contacts__email .contacts__call-description:focus {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     display: flex;

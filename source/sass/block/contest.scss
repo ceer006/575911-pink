@@ -22,8 +22,17 @@
   font-weight: 400;
   line-height: 30px;
   color: #ffffff;
+  text-transform: uppercase;
 
   background-color: #2aab6d;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3)
+  }
 }
 
 .contest__contacts .contest__title {

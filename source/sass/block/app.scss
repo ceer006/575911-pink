@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat left top;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
 
 }
 
@@ -44,6 +44,15 @@
   margin-top: 30px;
   padding: 14px 36px;
   border-radius: 50px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .app__inner {
