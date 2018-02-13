@@ -2,7 +2,7 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   min-height: 237px;
-  margin-top: -85px;
+  margin-top: -126px;
   margin-bottom: 45px;
 }
 
@@ -15,16 +15,15 @@
   margin-bottom: 45px;
 }
 
-.page-header__logo {
-  display: block;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0;
-  margin-bottom: -18px;
-  text-align: start;
-  border-bottom: 1px solid #000000;
-}
+// .main-nav__logo {
+//   display: block;
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+//   margin: 0;
+//   margin-bottom: -18px;
+//   text-align: start;
+//  // border-bottom: 1px solid #000000;
+// }
 
 .page-header__title {
   padding-top: 100px;
@@ -39,9 +38,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    width: 960px;
-    display: flex;
-    flex-wrap: wrap;
+  .main-nav__logo {
+    margin-top: 20px;
   }
 }

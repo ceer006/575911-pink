@@ -4,15 +4,133 @@
   // font-weight: 700;
   // line-height: 32px;
   // text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
-  margin: 0 auto;
+.main-nav__inner {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  z-index: 2;
+
+  display: block;
+  width: 60px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+
+   background-color: transparent;
+
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    //  background-color: #624530;
+  }
+}
+
+.main-nav__logo--closed + .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 5px;
+
+  width: 48px;
+  height: 4px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.main-nav__logo--closed + .main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+}
+
+.main-nav__logo--closed + .main-nav__toggle:focus::before {
+  opacity: 0.3;
+}
+
+// .main-nav__logo--closed + .main-nav__toggle:active::before {
+//   background-color: #ffffff;
+//   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+// }
+
+.main-nav__logo--opened + .main-nav__toggle {
+  top: 7px;
+  right: 10px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 13px;
+
+    width: 36px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #d22856;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    opacity: 0.3;
+  }
+
+  // &:active::before,
+  // &:active::after {
+  //   background-color: rgba(255, 255, 255, 0.3);
+  // }
 }
 
 .main-nav__background--closed {
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat left bottom;
   margin-top: -70px;
   min-height: 462px;
+}
 
+.main-nav__logo {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: start;
+ // border-bottom: 1px solid #000000;
+}
+
+.main-nav__logo--opened {
+  background-color: #283645;
+  box-shadow: 0 2px 0 -1px rgba(255, 255, 255, 0.15), inset 0 -2px 0 -1px black;
+}
+
+.main-nav__logo-page {
+  margin-left: 20px;
 }
 
 .main-nav--nojs .main-nav__background--closed {
@@ -34,7 +152,7 @@
 
 .main-nav__logo-wrapper {
   position: relative;
-  background-color: rgba(0,0,0,0.3);
+  // background-color: rgba(0,0,0,0.3);
 }
 
 .main-nav--nojs .main-nav__logo-wrapper {
@@ -43,15 +161,23 @@
 
 .main-nav__logo-wrapper--opened {
   background-color: #283645;
+  padding-left: 20px;
+  box-shadow: 0 2px 0 -1px rgba(255, 255, 255, 0.15), inset 0 -2px 0 -1px black;
+  margin: 0 -20px;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  right: 12px;
-  top: 20px;
-  background: none;
-  border: none;
+.main-nav__logo-wrapper--opened .main-nav__toggle {
+  right: 20px;
 }
+
+// .main-nav__toggle {
+//   position: absolute;
+//   padding: 0;
+//   right: 20px;
+//   top: 20px;
+//   background: none;
+//   border: none;
+// }
 
 .main-nav__toggle--opened img:first-child {
   display: block;
@@ -69,12 +195,21 @@
   display: block;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $nodesktop-width) {
+  .main-nav__inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
 
+@media (min-width: $tablet-width) {
+  .main-nav__logo-wrapper {
+
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
+  .main-nav .center{
     display: flex;
   }
   .main-nav__toggle {
@@ -82,5 +217,9 @@
   }
   .main-nav__wrapper {
     flex-grow: 1;
+  }
+  .main-nav__logo {
+    margin-right: 160px;
+    margin-top: 23px;
   }
 }

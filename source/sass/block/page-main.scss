@@ -1,0 +1,17 @@
+.page-main__title {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.8px;
+  color: #283645;
+  text-transform: uppercase;
+  text-align: center;
+}
+.page-main__title:last-of-type {
+  margin-top: 36px;
+  margin-bottom: 30px;
+}

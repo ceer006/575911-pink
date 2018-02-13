@@ -1,5 +1,4 @@
 .contest {
-  margin: 0 20px;
   margin-top: 30px;
 }
 
@@ -23,8 +22,17 @@
   font-weight: 400;
   line-height: 30px;
   color: #ffffff;
+  text-transform: uppercase;
 
   background-color: #2aab6d;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3)
+  }
 }
 
 .contest__contacts .contest__title {
@@ -128,6 +136,16 @@
   border: none;
 }
 
+.contest__wrapper {
+  margin-left: -20px;
+  margin-right: -20px;
+  .contest__app,
+  .contest__attainment {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 .contest__full-name,
 .contest__wrapper,
 .contest__contacts,
@@ -201,15 +219,15 @@
   .contest__contacts .contest__title {
     display: block;
     width: 260px;
-    margin-left: 200px;
+    margin-left: 180px;
   }
   .contest__app .contest__title {
     width: 368px;
-    margin-left: 146px;
+    margin-left: 125px;
   }
   .contest__letter .contest__title {
     width: 262px;
-    margin-left: 198px;
+    margin-left: 180px;
     margin-top: 0;
   }
   .contest__letter textarea {
@@ -282,7 +300,6 @@
   .contest {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 10px;
     margin-top: 30px;
     justify-content: space-between;
     align-items: center;
@@ -305,9 +322,8 @@
   .contest__input--contacts {
     width: 375px;
   }
-  .contest__contacts-item:last-of-type .contest__label {
-    margin-left: 0px;
-    margin-right: 60px;
+  .contest__contacts-item:last-of-type {
+    display: flex;
   }
   .contest__wrapper:first-of-type,
   .contest__legend {
@@ -335,10 +351,9 @@
       margin-left: 339px;
     }
     .contest__textarea {
-      width: 820px;
+      width: 816px;
       margin-left: 60px;
       margin-right: 60px;
     }
   }
 }
-

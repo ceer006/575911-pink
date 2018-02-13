@@ -45,21 +45,17 @@
 }
 
 .price__table-icon {
-  padding: 0;
-  margin: 8px;
-
+  padding: 15px;
 }
 
 .price__table-icon--yes {
   background-image: url("../img/icon-yes.svg");
-  height: 26px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .price__table-icon--no {
   background-image: url("../img/icon-no.svg");
-  height: 26px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -71,14 +67,33 @@
 }
 
 @media (max-width: $mobile-width) {
+  .price {
+    overflow: hidden;
+  }
+  .price .inner {
+    overflow: hidden;
+  }
+  .price__table {
+    width: 841px;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+  }
   .price__table-option--mobile {
       display: none;
+  }
+  .price__table-cell p {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .price__table {
-    margin: 0 20px;
     width: 620px;
   }
   .price__table-option--no-mobile {
@@ -102,11 +117,28 @@
     line-height: 30px;
     color: #283645;
   }
+  .price__table-cell {
+    position: relative;
+    height: 45px;
+  }
+  .price__table-icon {
+    position: absolute;
+    left: 42%;
+    top: 15%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .price__table {
-    margin: 0 10px;
     width: 940px;
+  }
+  .price__table-cell {
+    position: relative;
+    height: 60px;
+  }
+  .price__table-icon {
+    position: absolute;
+    left: 45%;
+    top: 25%;
   }
 }

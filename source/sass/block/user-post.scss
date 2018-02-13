@@ -3,6 +3,14 @@
   text-align: center;
 }
 
+.user-post__photo {
+  margin-top: 20px;
+}
+
+.user-post__inner {
+  background-color: #f2f2f2;
+}
+
 .user-post__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -11,23 +19,20 @@
   color: #283645;
 }
 
-.user-post__form {
-  background-color: #f2f2f2;
-}
-
 .user-post__setting {
   list-style: none;
   display: flex;
-  margin: 0 20px;
-  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 55px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #dddfe0;
 }
 
 .user-post__wrapper {
   margin-top: 40px;
-}
-
-.user-post__setting-button {
-  margin-left: 35px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .user-post__button-post {
@@ -42,6 +47,15 @@
   font-weight: 700;
   line-height: 18px;
   color: #d22856;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3)
+  }
 }
 
 .user-post__button-cancel {
@@ -55,6 +69,26 @@
   line-height: 18px;
   color: #283645;
   margin-bottom: 40px;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    background-color: rgba(40, 54, 69, 0.3)
+  }
+}
+
+.user-post__button-contrast {
+  position: relative;
+}
+
+.user-post__button-contrast input {
+  position: absolute;
+  left: -186px;
+  bottom: -50px;
+  width: 240px;
 }
 
 @media (min-width: $tablet-width) {
