@@ -9,6 +9,7 @@
 
 .user-post__inner {
   background-color: #f2f2f2;
+  margin-top: 40px;
 }
 
 .user-post__title {
@@ -17,6 +18,8 @@
   font-weight: 400;
   line-height: 30px;
   color: #283645;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .user-post__setting {
@@ -24,6 +27,8 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-right: -20px;
+  margin-left: -20px;
   padding: 0 55px;
   padding-bottom: 100px;
   border-bottom: 1px solid #dddfe0;
@@ -31,8 +36,13 @@
 
 .user-post__wrapper {
   margin-top: 40px;
-  margin-right: -20px;
-  margin-left: -20px;
+}
+
+.user-post__button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .user-post__button-post {
@@ -80,7 +90,9 @@
   }
 }
 
-.user-post__button-contrast {
+.user-post__button-contrast,
+.user-post__button-fill,
+.user-post__button-crop {
   position: relative;
 }
 
@@ -91,12 +103,140 @@
   width: 240px;
 }
 
+.user-post__button-fill input,
+.user-post__button-crop input {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .user-post__title {
+    width: 620px;
+    font-size: 18px;
+  }
+  .user-post__setting {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    border: none;
+  }
+
+  .user-post__photo {
+    margin-bottom: 55px;
+    margin-top: 55px;
+  }
+
   .user-post__form {
     display: flex;
+    justify-content: space-between;
   }
   .user-post__wrapper {
     display: flex;
     flex-direction: column;
+    width: 280px;
+    margin-top: 65px;
+  }
+
+  .user-post__button {
+    width: 22px;
+    height: 22px;
+  }
+
+  .user-post__setting-button {
+    border-bottom: 1px solid #dddfe0;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 25px;
+  }
+
+  .user-post__button-post {
+    margin-bottom: 25px;
+  }
+
+  .user-post__button-post,
+  .user-post__button-cancel {
+    width: 260px;
+  }
+
+  .user-post__button-contrast,
+  .user-post__button-fill,
+  .user-post__button-crop {
+    margin-bottom: 20px;
+  }
+
+  .user-post__button-contrast input,
+  .user-post__button-fill input,
+  .user-post__button-crop input {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    width: 200px;
+    left: initial;
+    margin-left: 50px
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-post__inner {
+    background-color: transparent;
+  }
+
+  .user-post__form {
+    background-color: #f2f2f2;
+  }
+
+  .user-post__photo {
+    margin-top: 55px;
+    margin-left: 80px;
+    margin-bottom: 55px;
+  }
+
+  .user-post__button {
+    width: auto;
+    height: auto;
+  }
+
+  .user-post__wrapper {
+    width: 410px;
+    margin-right: 60px;
+    margin-top: 55px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .user-post__button-post,
+  .user-post__button-cancel {
+    width: 185px;
+    margin: 0;
+    margin-top: 130px;
+    margin-bottom: 60px;
+  }
+
+  // .user-post__setting {
+  //   flex-direction: column;
+  //   width: 100%;
+  //   padding: 0;
+  //   align-items: start;
+  //   border: none;
+  // }
+
+  .user-post__setting-button {
+    margin-bottom: 15px;
+  }
+
+  .user-post__button-contrast,
+  .user-post__button-fill,
+  .user-post__button-crop {
+    margin-bottom: 5px;
+  }
+
+  .user-post__button-contrast input,
+  .user-post__button-fill input,
+  .user-post__button-crop input {
+    bottom: 20px;
+    width: 290px;
+    margin-left: 95px;
   }
 }

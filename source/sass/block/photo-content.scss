@@ -5,4 +5,20 @@
     line-height: 30px;
     text-align: center;
     color: #283645;
+    width: 280px;
+    margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-content__text {
+    width: 620px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-content__text {
+    width: 940px;
+    padding: 0 150px;
+  }
 }

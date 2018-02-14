@@ -32,7 +32,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
+        <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs center">
             <h1 class="page-header__title">Фотографии пользователей</h1>
         </div>
     </header>
@@ -116,7 +116,7 @@
             <!-- </div> -->
         </section>
         <section class="user-post">
-            <p class="user-post__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            <p class="user-post__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
             <div class="user-post__inner center">
                 <!-- <p class="user-post__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p> -->
                 <form class="user-post__form" action="https://echo.htmlacademy.ru" method="post">
@@ -125,17 +125,19 @@
                         <ul class="user-post__setting">
                             <li class="user-post__setting-button">
                                 <div class="user-post__button-crop">
-                                    <img src="img/icon-editor-crop.svg" width="48" height="48" alt="обрезать">
+                                  <button class="user-post__button" type="button"><img src="img/icon-editor-crop.svg" width="48" height="48" alt="обрезать"></button>
+                                    <input type="range" min="0" max="100" step="1" value="50">
                                 </div>
                             </li>
                             <li class="user-post__setting-button">
                                 <div class="user-post__button-fill">
-                                    <img src="img/icon-editor-fill.svg" width="48" height="48" alt="залить">
+                                  <button class="user-post__button" type="button"><img src="img/icon-editor-fill.svg" width="48" height="48" alt="залить"></button>
+                                    <input type="range" min="0" max="100" step="1" value="50">
                                 </div>
                             </li>
                             <li class="user-post__setting-button">
                                 <div class="user-post__button-contrast">
-                                    <img src="img/icon-editor-contrast.svg" width="48" height="48" alt="контрастность">
+                                  <button class="user-post__button" type="button"><img src="img/icon-editor-contrast.svg" width="48" height="48" alt="контрастность"></button>
                                     <input type="range" min="0" max="100" step="1" value="50">
                                 </div>
                             </li>
