@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: $nodesktop-width) {
+@media #{$nodesktop-widths} {
   .site-list__item {
     box-shadow: 0 2px 0 -1px rgba(255, 255, 255, 0.15), inset 0 -2px 0 -1px black;
     height: 65px;
@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .site-list {
     display: flex;
     flex-grow: 1;

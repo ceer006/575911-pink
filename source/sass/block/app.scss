@@ -88,13 +88,13 @@
   color: #ffffff;
 }
 
-@media (max-width: $mobile-width) {
+@media #{$mobile-widths} {
   .app__title {
     display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .app--closed,
   .app--opened {
     padding-top: 52px;
@@ -119,8 +119,21 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .app {
     margin-top: -110px;
+  }
+  .app__info {
+    margin-top: 130px;
+  }
+  .app__title {
+    font-size: 50px;
+  }
+  .app__button {
+    margin-top: 45px;
+  }
+  .app__list {
+    margin-top: 65px;
+    margin-bottom: 50px;
   }
 }

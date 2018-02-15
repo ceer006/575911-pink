@@ -5,4 +5,34 @@
     line-height: 30px;
     text-align: center;
     color: #283645;
+    width: 280px;
+    margin: 0 auto;
+}
+.photo-content__wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media #{$tablet-widths} {
+  .photo-content__text {
+    width: 620px;
+    font-size: 18px;
+  }
+  .photo-content__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media #{$desktop-widths} {
+  .photo-content__text {
+    width: 940px;
+    padding: 0 150px;
+  }
+  .photo-content__wrapper {
+    width: 940px;
+  }
 }
