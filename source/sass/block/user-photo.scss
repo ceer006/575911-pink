@@ -136,7 +136,11 @@
   }
 }
 
+<<<<<<< HEAD
 @media #{$desktop-widths} {
+=======
+@media (min-width: $desktop-width) {
+>>>>>>> c68d15f94ad3fc94a5af70f099502d1f40c4cca4
   .user-panorama__item-wrapper {
     width: 940px;
   }

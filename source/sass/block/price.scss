@@ -127,7 +127,11 @@
   }
 }
 
+<<<<<<< HEAD
 @media #{$tablet-widths} {
+=======
+@media (min-width: $tablet-width) {
+>>>>>>> c68d15f94ad3fc94a5af70f099502d1f40c4cca4
   .price {
     padding-bottom: 70px;
   }
