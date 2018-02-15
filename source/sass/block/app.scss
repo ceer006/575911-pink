@@ -88,13 +88,13 @@
   color: #ffffff;
 }
 
-@media (max-width: $mobile-width) {
+@media #{$mobile-widths} {
   .app__title {
     display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .app--closed,
   .app--opened {
     padding-top: 52px;
@@ -119,7 +119,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .app {
     margin-top: -110px;
   }

@@ -25,7 +25,7 @@
   cursor: pointer;
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .range-filter {
     top: 0;
     margin-left: 50px;
@@ -38,7 +38,7 @@
 
 
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .range-filter {
     top: 15px;
     margin-left: 95px;

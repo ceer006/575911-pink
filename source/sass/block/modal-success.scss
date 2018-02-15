@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .modal-success {
     width: 460px;
     height: 430px;
@@ -94,7 +94,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .modal-success {
     width: 780px;
     height: 380px;

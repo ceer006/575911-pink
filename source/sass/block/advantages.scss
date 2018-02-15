@@ -96,7 +96,7 @@
   color: #d43560;
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .advantages {
     margin-top: 5px;
   }
@@ -134,7 +134,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .advantages__list {
     width: 100%;
     display: flex;

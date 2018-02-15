@@ -100,7 +100,7 @@
   transform: translatey(-68%);
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .contacts__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +116,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .contacts::after {
     height: 154px;
   }

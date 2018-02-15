@@ -12,7 +12,7 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .main-form-page__text {
     font-size: 18px;
   }

@@ -66,13 +66,13 @@
   background-color: transparent;
 }
 
-@media (max-width: $mobile-width) {
+@media #{$mobile-widths} {
   .reviews__description {
     display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .reviews__item {
     display: flex;
     flex-direction: column-reverse;
@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .reviews__slider-controls {
     width: 940px;
     left: inherit;

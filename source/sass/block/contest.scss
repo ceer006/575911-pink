@@ -184,7 +184,7 @@
   color: #d22856;
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet-widths} {
   .contest {
     display: flex;
     flex-direction: column;
@@ -297,7 +297,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop-widths} {
   .contest {
     flex-direction: row;
     flex-wrap: wrap;
