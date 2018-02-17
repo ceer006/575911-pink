@@ -4,6 +4,11 @@ text-align: center;
 margin-bottom: 40px;
 }
 
+.page-footer__logo {
+  display: block;
+  width: 150px;
+}
+
 @media #{$mobile-widths} {
   .page-footer--index {
     display: none;
@@ -12,12 +17,17 @@ margin-bottom: 40px;
 
 @media #{$tablet-widths} {
   .page-footer {
-    margin-top: 90px;
+    margin-top: 30px;
     margin-bottom: 40px;
   }
   .page-footer__inner {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-footer {
+    margin-top: 70px;
   }
 }

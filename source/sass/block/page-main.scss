@@ -23,23 +23,31 @@
 }
 
 @media #{$tablet-widths} {
+  .page-main {
+    margin-top: 49px;
+  }
   .page-main__title {
     font-size: 40px;
     line-height: 48px;
     width: 660px;
+    text-transform: none;
+  }
+  .page-main__title:last-of-type {
+    padding: 0 50px;
   }
 }
 
 @media #{$desktop-widths} {
   .page-main {
-    margin-top: 75px;
+    margin-top: 65px;
   }
   .page-main__title {
     font-size: 50px;
     line-height: 60px;
     width: 960px;
+    text-transform: none;
   }
   .page-main__title:last-of-type {
-    padding: 0 70px;
+    padding: 0 120px;
   }
 }

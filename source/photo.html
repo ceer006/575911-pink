@@ -51,11 +51,11 @@
                         <span></span>
                     </span>
                     <ul class="main-nav__list main-nav__list--visible">
-                        <li class="main-nav__item main-nav__item--active">
-                            <a>Главная</a>
-                        </li>
                         <li class="main-nav__item">
-                            <a href="photo.html">Фотографии</a>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="main-nav__item main-nav__item--active">
+                            <a>Фотографии</a>
                         </li>
                         <li class="main-nav__item">
                             <a href="form.html">Конкурс</a>
@@ -76,7 +76,11 @@
         <section class="photo-content">
             <p class="photo-content__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
             <div class="user-panorama">
-                <img class="user-panorama__item" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото пользователя">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                    <img class="user-panorama__item" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
                 <div class="user-panorama__item-wrapper">
                     <p class="user-panorama__nikname">Анна</p>
                     <p class="user-panorama__public-time">(5 минут назад)</p>
@@ -87,7 +91,11 @@
             </div>
             <div class="photo-content__wrapper">
                 <div class="user-photo">
-                    <img class="user-photo__item" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                        <img class="user-photo__item" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото пользователя">
+                    </picture>
                     <div class="user-photo__item-wrapper">
                         <p class="user-photo__nikname">Левон</p>
                         <p class="user-photo__public-time">(5 часов назад)</p>
@@ -97,7 +105,11 @@
                     </div>
                 </div>
                 <div class="user-photo">
-                    <img class="user-photo__item" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                          <img class="user-photo__item" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя">
+                    </picture>
                     <div class="user-photo__item-wrapper">
                         <p class="user-photo__nikname">Антон</p>
                         <p class="user-photo__public-time">(12 часов назад)</p>
@@ -107,7 +119,11 @@
                     </div>
                 </div>
                 <div class="user-photo">
-                    <img class="user-photo__item" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                        <img class="user-photo__item" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
+                    </picture>
                     <div class="user-photo__item-wrapper">
                         <p class="user-photo__nikname">Борис</p>
                         <p class="user-photo__public-time">(20 часов назад)</p>
@@ -117,7 +133,11 @@
                     </div>
                 </div>
                 <div class="user-photo">
-                    <img class="user-photo__item" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                        <img class="user-photo__item" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя">
+                    </picture>
                     <div class="user-photo__item-wrapper">
                         <p class="user-photo__nikname">Сергей</p>
                         <p class="user-photo__public-time">(25 часов назад)</p>
@@ -127,7 +147,11 @@
                     </div>
                 </div>
                 <div class="user-photo">
-                    <img class="user-photo__item" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                        <img class="user-photo__item" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя">
+                    </picture>
                     <div class="user-photo__item-wrapper">
                         <p class="user-photo__nikname">Максим</p>
                         <p class="user-photo__public-time">(40 часов назад)</p>
@@ -137,7 +161,11 @@
                     </div>
                 </div>
                 <div class="user-photo">
-                    <img class="user-photo__item" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                        <img class="user-photo__item" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя">
+                    </picture>
                     <div class="user-photo__item-wrapper">
                         <p class="user-photo__nikname">Надежда</p>
                         <p class="user-photo__public-time">(45 часов назад)</p>
@@ -152,7 +180,11 @@
             <p class="user-post__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
             <div class="user-post__inner center">
                 <form class="user-post__form" action="https://echo.htmlacademy.ru" method="post">
-                    <img class="user-post__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото для загрузки">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                        <img class="user-post__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото для загрузки">
+                    </picture>
                     <div class="user-post__wrapper">
                         <ul class="user-post__setting">
                             <li class="user-post__setting-button">
