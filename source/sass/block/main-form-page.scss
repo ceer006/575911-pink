@@ -1,8 +1,5 @@
-.main-form-page {
-  margin-top: 45px;
-}
-
 .main-form-page__text {
+  padding-top: 32px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -13,12 +10,10 @@
 }
 
 @media #{$tablet-widths} {
-  .main-form-page {
-    margin-top: 92px;
-  }
   .main-form-page__text {
     font-size: 18px;
     padding: 0 65px;
+    padding-top: 92px;
     margin: 0;
   }
 }
@@ -26,5 +21,6 @@
 @media #{$desktop-widths} {
   .main-form-page__text {
     padding: 0 70px;
+    padding-top: 92px;
   }
 }

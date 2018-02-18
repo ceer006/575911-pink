@@ -1,0 +1,167 @@
+.analysis {
+  display: none;
+}
+
+.analysis__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283645;
+}
+
+.analysis__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.analysis__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #d43560;
+}
+
+.analysis__timer {
+  position: relative;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #d43560;
+}
+
+@media #{$tablet-widths} {
+  .analysis {
+    display: block;
+    margin-top: 77px;
+  }
+  .analysis .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .analysis__inner {
+    display: block;
+    width: 320px;
+    text-align: start;
+    padding-left: 10px;
+  }
+  .analysis__title {
+    margin: 0;
+    padding: 0;
+    margin-right: 130px;
+    margin-top: 20px;
+  }
+  .analysis__text {
+    margin: 0;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+  .analysis__link {
+    display: block;
+    margin-top: 10px;
+  }
+  .analysis__timer {
+    line-height: 113px;
+    margin-top: 44px;
+    padding-right: 34px;
+    padding-bottom: 37px;
+    padding-top: 25px;
+    padding-left: 34px;
+    margin-left: 31px;
+  }
+  .analysis__timer::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -12px;
+    width: 203px;
+    height: 203px;
+    display: block;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+  .analysis__timer::after {
+    content: "";
+    position: absolute;
+    top: -68px;
+    left: -29px;
+    width: 238px;
+    height: 276px;
+    display: block;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 100% 100%;
+  }
+}
+
+@media #{$desktop-widths} {
+  .analysis {
+    background-color: #f2f2f2;
+    margin-top: 0;
+  }
+  .analysis__inner {
+    width: 530px;
+    margin: 0;
+    margin-right: 43px;
+    padding-top: 96px;
+    padding-bottom: 115px;
+    padding-left: 0;
+  }
+  .analysis__title {
+    margin: 0;
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  .analysis__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .analysis__link {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 30px;
+  }
+  .analysis__timer {
+    font-size: 120px;
+    margin-left: 37px;
+    line-height: 116px;
+    margin-top: 12px;
+    padding-right: 43px;
+    padding-bottom: 60px;
+    padding-top: 45px;
+    padding-left: 43px;
+  }
+  .analysis__timer::before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: -15px;
+    width: 253px;
+    height: 253px;
+    display: block;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .analysis__timer::after {
+    content: "";
+    position: absolute;
+    top: -85px;
+    left: -37px;
+    width: 298px;
+    height: 345px;
+    display: block;
+    background-image: url("../img/icon-timer.svg");
+  }
+}

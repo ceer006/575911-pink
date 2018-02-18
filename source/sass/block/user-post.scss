@@ -1,5 +1,5 @@
 .user-post {
-  margin-top: 43px;
+  margin-top: 38px;
   text-align: center;
 }
 
@@ -99,6 +99,31 @@
   position: relative;
 }
 
+.user-post__button-crop .user-post__button {
+  width: 48px;
+  height: 48px;
+  background-image: url(../img/icon-editor-crop-pink.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.user-post__button-fill .user-post__button {
+  width: 48px;
+  height: 48px;
+  background-image: url(../img/icon-editor-fill-pink.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.user-post__button-contrast .user-post__button {
+  margin: 8px;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/icon-editor-contrast-pink.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 @media #{$mobile-widths} {
   .user-post__button-contrast .range-filter {
     margin-left: -177px;
@@ -112,9 +137,20 @@
   .user-post__button-contrast .range-filter {
     display: none;
   }
+
+  .user-post__button-fill--noactiv .user-post__button {
+    background-image: url(../img/icon-editor-fill.svg);
+  }
+
+  .user-post__button-contrast--noactiv .user-post__button {
+    background-image: url(../img/icon-editor-contrast.svg);
+  }
 }
 
 @media #{$tablet-widths} {
+  .user-post {
+    margin-top: 43px;
+  }
   .user-post__title {
     width: 620px;
     font-size: 18px;
@@ -154,7 +190,7 @@
   .user-post__setting-button {
     border-bottom: 1px solid #dddfe0;
     width: 100%;
-    text-align: start;
+    text-align: left;
     margin-bottom: 20px;
   }
 
@@ -173,9 +209,28 @@
   .user-post__button-crop {
     margin-bottom: 20px;
   }
+
+  .user-post__button-crop .user-post__button {
+    width: 22px;
+    height: 22px;
+  }
+
+  .user-post__button-fill .user-post__button {
+    width: 22px;
+    height: 22px;
+  }
+
+  .user-post__button-contrast .user-post__button {
+    margin: 8px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media #{$desktop-widths} {
+  .user-post {
+    margin-top: 40px;
+  }
   .user-post__inner {
     background-color: transparent;
   }
@@ -229,5 +284,20 @@
     bottom: 20px;
     width: 290px;
     margin-left: 95px;
+  }
+  .user-post__button-crop .user-post__button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .user-post__button-fill .user-post__button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .user-post__button-contrast .user-post__button {
+    margin: 8px;
+    width: 32px;
+    height: 32px;
   }
 }
