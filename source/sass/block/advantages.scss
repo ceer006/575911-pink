@@ -12,7 +12,6 @@
   height: 94px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .advantages__title {
@@ -56,6 +55,11 @@
   margin: 0 auto;
   display: block;
   background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 100%;
+  }
 }
 
 .advantages__item-title {
@@ -96,6 +100,15 @@
   color: #d43560;
 }
 
+.advantages__analysis-timer {
+  position: relative;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #d43560;
+}
+
 @media #{$tablet-widths} {
   .advantages {
     margin-top: 5px;
@@ -105,9 +118,54 @@
   }
   .advantages__analysis {
     display: block;
+    margin-top: 66px;
+  }
+  .advantages__analysis .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .advantages__analysis-inner {
+    display: block;
     width: 320px;
     text-align: start;
-    margin-left: 300px;
+    padding-left: 10px;
+  }
+  .advantages__analysis-title {
+    margin: 0;
+    padding: 0;
+    margin-right: 130px;
+    margin-top: 20px;
+  }
+  .advantages__analysis-text {
+    margin: 0;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+  .advantages__analysis-link {
+    display: block;
+    margin-top: 10px;
+  }
+  .advantages__analysis-timer {
+    margin-left: 18px;
+    line-height: 113px;
+    margin-top: 47px;
+    border: 15px solid;
+    border-radius: 50%;
+    padding-right: 34px;
+    padding-bottom: 37px;
+    padding-top: 25px;
+    padding-left: 31px;
+  }
+  .advantages__analysis-timer::before {
+    content: "";
+    position: absolute;
+    top: -85px;
+    left: -37px;
+    width: 298px;
+    height: 345px;
+    display: block;
+    background-image: url(../img/timer.svg);
   }
   .advantages__wrapper {
     display: flex;
@@ -119,15 +177,33 @@
   }
   .advantages__list {
     order: 2;
-    width: 320px;
-    padding-top: 20px;
+    width: 310px;
+    padding-top: 28px;
+    padding-bottom: 29px;
+    text-align: start;
+  }
+  .advantages__item {
+    margin: 0;
+  }
+  .advantages__item:nth-of-type(2),
+  .advantages__item:last-of-type {
+    margin-top: 41px;
+  }
+  .advantages__description {
+    width: 310px;
+    margin-top: 19px;
   }
   .advantages__wrapper::before {
-    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     content: "";
-    width: 157px;
-    display: block;
+    width: 268px;
+    margin-top: -49px;
     background-repeat: no-repeat;
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 100%;
+    }
   }
   .advantages__item:last-of-type::after {
     content: none;
@@ -135,10 +211,25 @@
 }
 
 @media #{$desktop-widths} {
+  .advantages {
+    margin-top: 85px;
+  }
+  .advantages__wrapper {
+    margin-top: -103px;
+  }
   .advantages__list {
     width: 100%;
+    padding: 0;
     display: flex;
     justify-content: space-between;
+    .advantages__item {
+    margin: 0;
+    width: 292px;
+    text-align: center;
+    }
+  }
+  .advantages__item:first-of-type {
+    margin-left: 4px;
   }
   .advantages__analysis-title {
     line-height: 30px;
@@ -147,15 +238,51 @@
     content: none;
   }
   .advantages__item::before {
-    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
     content: "";
-    width: 157px;
-    height: 282px;
+    width: 292px;
+    height: 302px;
     margin: 0 auto;
     margin-bottom: 55px;
     display: block;
     background-repeat: no-repeat;
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 100%;
+    }
   }
+  .advantages__item:nth-of-type(2) {
+    margin-left: -5px;
+  }
+
+  .advantages__item:nth-of-type(2)::before {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    margin-left: 4px;
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  .advantages__item:last-of-type .advantages__item-title {
+    margin-left: -6px;
+    padding: 0px 30px;
+  }
+  .advantages__item:last-of-type .advantages__description {
+    margin-left: -6px;
+  }
+
+  .advantages__item:last-of-type::before {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 100%;
+    }
+  }
+
   .advantages__item-title {
     font-size: 30px;
     line-height: 30px;
@@ -164,5 +291,74 @@
   .advantages__description {
     font-size: 18px;
     line-height: 30px;
+    width: 292px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0 25px;
+  }
+
+  .advantages__analysis {
+    background-color: #f2f2f2;
+    margin-top: 0;
+  }
+
+  .advantages__analysis-inner {
+    width: 530px;
+    margin: 0;
+    margin-right: 43px;
+    padding-top: 130px;
+    padding-bottom: 115px;
+    padding-left: 0;
+  }
+
+  .advantages__analysis-title {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .advantages__analysis-text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .advantages__analysis-link {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 30px;
+  }
+  .advantages__analysis-timer {
+    font-size: 120px;
+    margin-left: 23px;
+    line-height: 116px;
+    margin-top: 43px;
+    border: 15px solid;
+    border-radius: 50%;
+    padding-right: 43px;
+    padding-bottom: 60px;
+    padding-top: 45px;
+    padding-left: 43px;
+  }
+  .advantages__analysis-timer::before {
+    content: "";
+    position: absolute;
+    top: -85px;
+    left: -37px;
+    width: 298px;
+    height: 345px;
+    display: block;
+    background-image: url("../img/icon-editor-diagram-fill.svg.svg");
+  }
+  .advantages__analysis-timer::after {
+    content: "";
+    position: absolute;
+    top: -85px;
+    left: -37px;
+    width: 298px;
+    height: 345px;
+    display: block;
+    background-image: url("../img/icon-timer.svg");
   }
 }
