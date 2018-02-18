@@ -75,41 +75,12 @@
   line-height: 24px;
 }
 
-.advantages__description,
-.advantages__analysis-text {
+.advantages__description {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #283645;
-}
-
-.advantages__analysis {
-  display: none;
-}
-
-.advantages__analysis-title {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-.advantages__analysis-link {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #d43560;
-}
-
-.advantages__analysis-timer {
-  position: relative;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #d43560;
 }
 
 @media #{$tablet-widths} {
@@ -121,70 +92,6 @@
   }
   .advantages__item-title {
     line-height: 10px;
-  }
-  .advantages__analysis {
-    display: block;
-    margin-top: 77px;
-  }
-  .advantages__analysis .center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .advantages__analysis-inner {
-    display: block;
-    width: 320px;
-    text-align: start;
-    padding-left: 10px;
-  }
-  .advantages__analysis-title {
-    margin: 0;
-    padding: 0;
-    margin-right: 130px;
-    margin-top: 20px;
-  }
-  .advantages__analysis-text {
-    margin: 0;
-    margin-top: 10px;
-    padding-right: 10px;
-  }
-  .advantages__analysis-link {
-    display: block;
-    margin-top: 10px;
-  }
-  .advantages__analysis-timer {
-    line-height: 113px;
-    margin-top: 44px;
-    padding-right: 34px;
-    padding-bottom: 37px;
-    padding-top: 25px;
-    padding-left: 34px;
-    margin-left: 31px;
-  }
-  .advantages__analysis-timer::before {
-    content: "";
-    position: absolute;
-    top: -14px;
-    left: -12px;
-    width: 203px;
-    height: 203px;
-    display: block;
-    background-image: url("../img/icon-editor-diagram-fill.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-    background-size: 100% 100%;
-    z-index: 1;
-  }
-  .advantages__analysis-timer::after {
-    content: "";
-    position: absolute;
-    top: -68px;
-    left: -29px;
-    width: 238px;
-    height: 276px;
-    display: block;
-    background-image: url("../img/icon-timer.svg");
-    background-size: 100% 100%;
   }
   .advantages__wrapper {
     display: flex;
@@ -253,9 +160,6 @@
   .advantages__item:first-of-type {
     margin-left: 4px;
   }
-  .advantages__analysis-title {
-    line-height: 30px;
-  }
   .advantages__wrapper::before {
     content: none;
   }
@@ -304,7 +208,6 @@
       background-size: 100%;
     }
   }
-
   .advantages__item-title {
     font-size: 30px;
     line-height: 30px;
@@ -317,70 +220,5 @@
     margin: 0;
     margin-top: 24px;
     padding: 0 25px;
-  }
-
-  .advantages__analysis {
-    background-color: #f2f2f2;
-    margin-top: 0;
-  }
-
-  .advantages__analysis-inner {
-    width: 530px;
-    margin: 0;
-    margin-right: 43px;
-    padding-top: 96px;
-    padding-bottom: 115px;
-    padding-left: 0;
-  }
-
-  .advantages__analysis-title {
-    margin: 0;
-    margin-top: 30px;
-  }
-
-  .advantages__analysis-text {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0;
-    margin-top: 24px;
-  }
-  .advantages__analysis-link {
-    display: block;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0;
-    margin-top: 30px;
-  }
-  .advantages__analysis-timer {
-    font-size: 120px;
-    margin-left: 37px;
-    line-height: 116px;
-    margin-top: 12px;
-    padding-right: 43px;
-    padding-bottom: 60px;
-    padding-top: 45px;
-    padding-left: 43px;
-  }
-  .advantages__analysis-timer::before {
-    content: "";
-    position: absolute;
-    top: -17px;
-    left: -15px;
-    width: 253px;
-    height: 253px;
-    display: block;
-    background-image: url("../img/icon-editor-diagram-fill.svg");
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  .advantages__analysis-timer::after {
-    content: "";
-    position: absolute;
-    top: -85px;
-    left: -37px;
-    width: 298px;
-    height: 345px;
-    display: block;
-    background-image: url("../img/icon-timer.svg");
   }
 }
