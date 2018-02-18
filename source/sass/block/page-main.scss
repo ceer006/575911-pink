@@ -1,7 +1,6 @@
-.page-main {
-  margin-top: 45px;
+.page-main__title:first-of-type {
+  padding-top: 41px;
 }
-
 .page-main__title {
   margin: 0 auto;
   padding: 0;
@@ -17,14 +16,11 @@
 
 @media #{$mobile-widths} {
   .page-main__title:last-of-type {
-    margin-top: 27px;
+    padding-top: 31px;
   }
 }
 
 @media #{$tablet-widths} {
-  .page-main {
-    margin-top: 49px;
-  }
   .page-main__title {
     font-size: 40px;
     line-height: 48px;
@@ -34,12 +30,12 @@
   .page-main__title:last-of-type {
     padding: 0 50px;
   }
+  .page-main__title:first-of-type {
+    padding-top: 49px;
+  }
 }
 
 @media #{$desktop-widths} {
-  .page-main {
-    margin-top: 65px;
-  }
   .photo-page-main {
     margin-top: 91px;
   }
@@ -48,6 +44,9 @@
     line-height: 60px;
     width: 960px;
     text-transform: none;
+  }
+  .page-main__title:first-of-type {
+    padding-top: 65px;
   }
   .page-main__title:last-of-type {
     padding: 0 120px;
