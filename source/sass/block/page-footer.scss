@@ -9,9 +9,19 @@ text-align: center;
   width: 150px;
 }
 
+.page-footer__logo-star,
+.page-footer__logo-glasses-crop {
+  display: none;
+}
+
 @media #{$mobile-widths} {
   .page-footer--index {
     display: none;
+  }
+  .page-footer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -38,5 +48,14 @@ text-align: center;
   }
   .page-footer--form {
     margin-top: 27px;
+  }
+  .page-footer__logo-star {
+    display: block;
+  }
+  .page-footer__logo-glasses {
+    display: none;
+  }
+  .page-footer__logo-glasses-crop {
+    display: block;
   }
 }
