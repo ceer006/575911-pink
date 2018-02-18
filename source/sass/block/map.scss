@@ -19,7 +19,7 @@
 }
 
 .map iframe {
-  display: none;
+  margin-top: -34px;
 }
 
 .map::before {
@@ -37,9 +37,7 @@
   .map {
     width: 660px;
     height: 380px;
-    background:
-      url("../img/bg-map-tablet@1x.jpg") 50% 30% no-repeat,
-      url("../img/map-marker.svg") 50% 80% no-repeat;
+    background: url("../img/map-marker.svg") 50% 80% no-repeat, url("../img/bg-map-tablet@1x.jpg") 50% 30% no-repeat;
 
     @media #{$retina} {
       background-image: url("../img/bg-map-tablet@2x.jpg");
