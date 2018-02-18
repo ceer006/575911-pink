@@ -1,5 +1,5 @@
 .social {
-  margin-top: 40px;
+  margin-top: 32px;
   margin-bottom: 40px;
 }
 
@@ -49,6 +49,6 @@
 @media #{$desktop-widths} {
   .social {
     margin-top: 4px;
-    margin-right: 15px;
+    margin-right: -5px;
   }
 }

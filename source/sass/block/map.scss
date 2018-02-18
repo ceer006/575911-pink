@@ -51,7 +51,8 @@
 @media #{$desktop-widths} {
   .map {
     width: 960px;
-    height: 485px;
+    height: 480px;
+    margin-top: 45px;
     background:
       url("../img/bg-map-desktop@1x.jpg") 50% 0% no-repeat,
       url("../img/map-marker.svg") 50% 80% no-repeat;
@@ -63,7 +64,7 @@
   }
 
   .map::before {
-    height: 130px;
+    height: 95px;
   }
 }
 

@@ -112,13 +112,27 @@
     margin-bottom: 35px;
   }
 
+  .reviews__list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 65px;
+    top: -46%;
+    left: 47.1%;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+  }
+
   .reviews__slider-controls-item:first-of-type {
     transform: rotate(-135deg);
     margin-left: 6px;
+    margin-bottom: 6px;
   }
   .reviews__slider-controls-item:nth-of-type(2) {
     transform: rotate(45deg);
     margin-right: 6px;
+    margin-bottom: 6px;
   }
   .reviews__slider-controls-item:last-of-type {
     display: none;

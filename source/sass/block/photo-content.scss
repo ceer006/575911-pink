@@ -1,3 +1,6 @@
+.photo-content {
+  margin-top: 45px;
+}
 .photo-content__text {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
@@ -7,6 +10,7 @@
     color: #283645;
     width: 280px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .photo-content__wrapper {
   text-align: center;
@@ -14,9 +18,13 @@
 }
 
 @media #{$tablet-widths} {
+  .photo-content {
+    margin-top: 92px;
+  }
   .photo-content__text {
     width: 620px;
     font-size: 18px;
+    padding: 0 30px;
   }
   .photo-content__wrapper {
     display: flex;
@@ -24,6 +32,7 @@
     justify-content: space-between;
     width: 620px;
     margin: 0 auto;
+    margin-top: 47px;
   }
 }
 
@@ -34,5 +43,6 @@
   }
   .photo-content__wrapper {
     width: 940px;
+    margin-top: 15px;
   }
 }

@@ -6,6 +6,32 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+                <!-- // Pixel Glass -->
+<style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "../img/preview/pink-form-mobile.jpg" );
+    }
+    /* Tablet */
+    @media ( min-width: 660px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "../img/preview/pink-form-tablet.jpg" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "../img/preview/pink-form-desktop.jpg" );
+      }
+    }
+  </style>
+      <link href="css/pixel.css" rel="stylesheet">
+    <script src="js/pixel.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>
@@ -74,15 +100,14 @@
 
     <main class="main-form-page">
         <div class="inner center">
-            <p class="main-form-page__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-            <p class="main-form-page__text">Пожалуйста, заполните форму ниже:</p>
+            <p class="main-form-page__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
             <form class="contest" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="contest__full-name">
                     <legend class="visually-hidden">фио</legend>
                     <div class="contest__full-name-item">
                         <label class="contest__label">фамилия <input class="contest__input" type="text" name="surname" value="" placeholder="Укажите фамилию *" ></label>
                     </div>
-                    <div class="contest__full-name-item">
+                    <div class="contest__full-name-item contest__full-name-item--desktop">
                         <label class="contest__label">имя <input class="contest__input" type="text" name="name" value="" placeholder="Введите ваше имя *" ></label>
                     </div>
                     <div class="contest__full-name-item">
@@ -94,22 +119,22 @@
                         <legend class="contest__title">ваши безбашенные достижения в путешествии</legend>
                         <ul class="contest__attainment-list">
                             <li class="contest__attainment-list-item">
-                                <label><input type="checkbox" name="checkbox-selfie" checked>Сделал селфи с акулой</label>
+                                <label><input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-selfie" checked>Сделал селфи с акулой</label>
                             </li>
                             <li class="contest__attainment-list-item">
-                                <label><input type="checkbox" name="checkbox-beach" checked>Обгорел на пляже</label>
+                                <label><input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-beach" checked>Обгорел на пляже</label>
                             </li>
                             <li class="contest__attainment-list-item">
-                                <label><input type="checkbox" name="checkbox-norris">Видел Чака Норриса</label>
+                                <label><input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-norris">Видел Чака Норриса</label>
                             </li>
                             <li class="contest__attainment-list-item">
-                                <label><input type="checkbox" name="checkbox-souvenir">Накупил сувениров</label>
+                                <label><input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-souvenir">Накупил сувениров</label>
                             </li>
                             <li class="contest__attainment-list-item">
-                                <label><input type="checkbox" name="checkbox-tower" checked>Удержал башню</label>
+                                <label><input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-tower" checked>Удержал башню</label>
                             </li>
                             <li class="contest__attainment-list-item">
-                                <label><input type="checkbox" name="checkbox-hotel">Разгромил отель</label>
+                                <label><input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-hotel">Разгромил отель</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -117,11 +142,8 @@
                 <fieldset class="contest__contacts">
                     <legend class="contest__title">контактная информация</legend>
                     <div class="contest__contacts-item">
-                        <label class="contest__label">номер телефона <input class="contest__input contest__input--contacts" type="tel" name="phone" value="" placeholder="Номер, пожалуйста" ></label>
-                    <!-- </div> -->
-                    <!-- <div class="contest__contacts-item"> -->
-                        <label class="contest__label">адрес почты <input class="contest__input contest__input--contacts" type="email" name="email" value="" placeholder="Введите почту *" ></label>
-                    <!-- </div> -->
+                        <label class="contest__label contest__label--phone">номер телефона <input class="contest__input contest__input--contacts" type="tel" name="phone" value="" placeholder="Номер, пожалуйста" ></label>
+                        <label class="contest__label contest__label--email">адрес почты <input class="contest__input contest__input--contacts contest__input--email" type="email" name="email" value="" placeholder="Введите почту *" ></label>
                 </fieldset>
                 <div class="contest__wrapper">
                     <fieldset class="contest__app">
@@ -141,9 +163,9 @@
                 </div>
                 <fieldset class="contest__letter">
                     <legend class="contest__title">опишите свои эмоции</legend>
-                    <label class="contest__label"><textarea class="contest__textarea" name="letter" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea></label>
+                    <label class="contest__label contest__label--nodesktop"><textarea class="contest__textarea" name="letter" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea></label>
+                    <label class="contest__label contest__label--desktop"><textarea class="contest__textarea" name="letter" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea></label>
                 </fieldset>
-                <!-- <input class="contest__submit" type="submit" value="Отправить форму"> -->
                 <div class="contest__legend">
                     <input class="contest__submit" type="submit" value="Отправить форму">
                     <p class="contest__legend-text"><sup>*</sup> — обязательные поля</p>
@@ -152,7 +174,7 @@
         </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
         <div class="page-footer__inner center">
             <a class="page-footer__logo" href="index.html">
                 <img class="page-footer__logo-page" src="img/logo-pink-blue-mobile.svg" width="146" height="40"  alt="логотип сайта">

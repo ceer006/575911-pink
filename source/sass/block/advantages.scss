@@ -212,19 +212,21 @@
 
 @media #{$desktop-widths} {
   .advantages {
-    margin-top: 77px;
+    margin-top: 85px;
   }
   .advantages__wrapper {
-    margin-top: -115px;
+    margin-top: -103px;
   }
   .advantages__list {
     width: 100%;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-  }
-  .advantages__item {
+    .advantages__item {
     margin: 0;
     width: 292px;
+    text-align: center;
+    }
   }
   .advantages__item:first-of-type {
     margin-left: 4px;
@@ -289,6 +291,7 @@
   .advantages__description {
     font-size: 18px;
     line-height: 30px;
+    width: 292px;
     margin: 0;
     margin-top: 24px;
     padding: 0 25px;
@@ -305,6 +308,7 @@
     margin-right: 43px;
     padding-top: 130px;
     padding-bottom: 115px;
+    padding-left: 0;
   }
 
   .advantages__analysis-title {
@@ -345,6 +349,16 @@
     width: 298px;
     height: 345px;
     display: block;
-    background-image: url(../img/timer.svg);
+    background-image: url("../img/icon-editor-diagram-fill.svg.svg");
+  }
+  .advantages__analysis-timer::after {
+    content: "";
+    position: absolute;
+    top: -85px;
+    left: -37px;
+    width: 298px;
+    height: 345px;
+    display: block;
+    background-image: url("../img/icon-timer.svg");
   }
 }

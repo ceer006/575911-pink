@@ -9,4 +9,6 @@
 node_modules/
 npm-debug.*
 source/css/*.css
+source/js/pixel.js
+source/img/preview
 Thumbs.db

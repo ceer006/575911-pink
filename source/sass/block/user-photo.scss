@@ -1,5 +1,26 @@
 .user-panorama {
   margin-top: 50px;
+  position: relative;
+}
+
+.user-panorama__like::before {
+  content: "панорама дня";
+  display: block;
+  position: absolute;
+  z-index: 11;
+  width: 140px;
+  height: 37px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #d22856;
+  right: -242px;
+  top: -286px;
+  text-align: center;
+  padding-top: 6px;
 }
 
 .user-photo__item-wrapper,
@@ -9,9 +30,9 @@
   align-items: baseline;
   width: 280px;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 25px;
-  padding-left: 20px;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  padding-left: 18px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
 }
@@ -52,13 +73,14 @@
   font-weight: 300;
   line-height: 24px;
   color: #283645;
+  text-transform: uppercase;
 }
 
 .user-photo__description,
 .user-panorama__description {
   margin: 0;
   padding: 0;
-  padding-right: 25px;
+  margin-bottom: 10px;
   width: 280px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -72,12 +94,13 @@
 .user-panorama__cool {
   margin: 0;
   padding: 0;
-  padding-left: 5px;
+  padding-left: 11px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   color: #d22856;
+  text-transform: uppercase;
 }
 
 .user-photo__like,
@@ -87,19 +110,29 @@
   padding: 0;
   border: none;
   width: 25px;
+  height: 24px;
   background-color: transparent;
   cursor: pointer;
+  position: relative;
 }
 
 @media #{$tablet-widths} {
+  .user-panorama {
+    margin-top: 76px;
+  }
+  .user-panorama__like::before {
+    right: -25px;
+    top: -475px;
+  }
   .user-panorama__item-wrapper{
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 20px;
     padding-left: 30px;
+    padding-top: 23px;
 
     .user-panorama__cool {
       margin-left: auto;
+      margin-top: auto;
     }
     .user-panorama__description {
       width: 100%;
@@ -123,15 +156,48 @@
       order: 1;
       margin-left: auto;
       margin-right: 25px;
+      margin-top: auto;
     }
     .user-photo__cool {
       padding: 0;
+      margin-top: auto;
     }
   }
 }
 
 @media #{$desktop-widths} {
+  .user-panorama {
+    margin-top: 88px;
+    margin-bottom: 17px;
+  }
+  .user-panorama__like::before {
+    right: -25px;
+    top: -477px;
+  }
   .user-panorama__item-wrapper {
     width: 940px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+  .user-panorama__nikname {
+    margin-top: 8px;
+  }
+  .user-panorama__public-time {
+    text-transform: uppercase;
+    padding-left: 3px;
+  }
+  .user-panorama__description {
+    margin-right: 0;
+  }
+  .user-panorama__cool {
+    text-transform: uppercase;
+  }
+  .user-photo {
+    margin-top: 32px;
+  }
+  .user-photo__nikname,
+  .user-photo__public-time {
+    margin-top: 7px;
+    margin-left: -2px;
   }
 }

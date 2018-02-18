@@ -1,5 +1,11 @@
 .contest {
-  margin-top: 30px;
+  margin-top: 17px;
+}
+
+.contest__attainment-list {
+  margin-top: 43px;
+  padding: 0;
+  list-style: none;
 }
 
 .contest__attainment-list-item,
@@ -39,11 +45,6 @@
   display: none;
 }
 
-.contest__attainment .contest__title,
-.contest__app .contest__title {
-  margin-top: 36px;
-}
-
 .contest__title {
   width: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -56,7 +57,7 @@
 }
 
 .contest__label {
-  margin-left: 20px;
+  margin-left: 23px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -70,13 +71,18 @@
   margin-left: 0;
 }
 
-.contest__attainment-list-item input,
+.contest__attainment-list-item input {
+  margin-right: 53px;
+}
+
 .contest__app-list-item input {
-  margin-right: 30px;
+  margin-right: 47px;
 }
 
 .contest__input {
-  height: 60px;
+  height: 63px;
+  margin-top: 5px;
+  position: relative;
 }
 
 .contest__input,
@@ -93,30 +99,44 @@
 }
 
 .contest__textarea {
-  padding-top: 16px;
-  margin-top: 18px;
+  padding-top: 14px;
+  padding-left: 18px;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
 .contest__attainment-list-item {
-  margin-bottom: 50px;
+  position: relative;
+  margin-bottom: 52px;
 }
 
 .contest__app-list-item {
   margin-bottom: 45px;
+  position: relative;
 }
 
-.contest__attainment-list,
+.contest__contacts-item {
+  margin-top: -3px;
+  position: relative;
+}
+
+.contest__input--contacts {
+  margin-bottom: 17px;
+}
+
 .contest__app-list {
   padding: 0;
   list-style: none;
+  margin-top: 39px;
 }
 
 .contest__wrapper {
   background-color: #f2f2f2;
 }
 
-.contest__full-name-item,
+.contest__full-name-item {
+  margin-top: 18px;
+}
 .contest__contacts-item {
   margin-bottom: 15px;
 }
@@ -146,15 +166,18 @@
   }
 }
 
+.contest__contacts {
+  margin-bottom: 26px;
+  margin-top: -10px;
+}
+
 .contest__full-name,
-.contest__wrapper,
-.contest__contacts,
-.contest__letter {
+.contest__wrapper {
   margin-bottom: 40px;
 }
 
-.contest__contacts {
-  margin-top: -10px;
+.contest__letter {
+  margin-bottom: 36px;
 }
 
 .contest__letter,
@@ -165,12 +188,13 @@
 .contest__legend {
   margin: 0;
   padding: 0;
-  margin-top: 50px;
+  margin-top: 38px;
 }
 
 .contest__legend-text {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 31px;
+  margin-bottom: 55px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -184,27 +208,128 @@
   color: #d22856;
 }
 
+.contest__label--nodesktop {
+  display: block;
+}
+.contest__label--desktop {
+  display: none;
+}
+
+.contest__app-list-item:first-of-type label::after {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+  left: 10px;
+  top: 8px;
+  z-index: 120;
+  background-color: #d43560;
+  border-radius: 50%;
+}
+.contest__app-list-item label::before {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  left: -1px;
+  top: -4px;
+  z-index: 120;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.contest__attainment-list-item:nth-of-type(1) label::after,
+.contest__attainment-list-item:nth-of-type(2) label::after,
+.contest__attainment-list-item:nth-of-type(5) label::after {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  width: 22px;
+  height: 11px;
+  left: 6px;
+  top: 12px;
+  z-index: 120;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 2px solid #d43560;
+  border-right: none;
+  border-top: none;
+  transform: rotate(-45deg);
+}
+.contest__attainment-list-item label::before {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  left: -1px;
+  top: 2px;
+  z-index: 120;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 2px solid #e5e5e5;
+}
+
+@media #{$mobile-widths} {
+  .contest {
+    margin-top: -47px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+  }
+  .contest__attainment .contest__title,
+  .contest__app .contest__title {
+    padding: 0 20px;
+    padding-top: 37px;
+  }
+}
+
 @media #{$tablet-widths} {
   .contest {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 20px;
   }
   .contest__wrapper:last-of-type {
     order: 1;
   }
   .contest__contacts {
     order: 2;
+    .contest__title {
+      display: block;
+      width: 260px;
+      margin-left: 180px;
+    }
   }
   .contest__wrapper:first-of-type {
     order: 3;
   }
   .contest__letter {
+    margin-top: 7px;
     order: 4;
+    .contest__title {
+      width: 262px;
+      margin-left: 180px;
+      margin-top: 0;
+    }
+    textarea {
+      width: 496px;
+      margin: 36px auto;
+    }
   }
   .contest__legend {
     margin-top: 10px;
     order: 5;
+  }
+  .contest__full-name-item {
+    margin-top: 46px;
   }
   .contest__wrapper {
     background-color: transparent;
@@ -217,24 +342,11 @@
     width: 436px;
     margin-left: 92px
   }
-  .contest__contacts .contest__title {
-    display: block;
-    width: 260px;
-    margin-left: 180px;
-  }
   .contest__app .contest__title {
     width: 368px;
     margin-left: 125px;
   }
-  .contest__letter .contest__title {
-    width: 262px;
-    margin-left: 180px;
-    margin-top: 0;
-  }
-  .contest__letter textarea {
-    width: 496px;
-    margin: 41px auto;
-  }
+
   .contest__full-name-item .contest__label {
     width: 100%;
     justify-content: space-between;
@@ -254,11 +366,11 @@
   .contest__contacts-item .contest__label {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 80px;
+    margin-left: 77px;
     margin-top: 37px;
   }
   .contest__contacts-item .contest__label:last-of-type {
-    margin-top: 30px;
+    margin-top: 19px;
   }
   .contest__contacts-item:last-of-type {
     margin-bottom: 26px;
@@ -283,17 +395,81 @@
     text-align: end;
     margin-top: 0;
   }
-  .contest__full-name,
+
+  .contest__app {
+    margin-top: 20px;
+  }
+  .contest__app-list {
+    margin-top: 48px;
+    padding-bottom: 1px;
+  }
+  .contest__app-list-item input {
+    margin-right: 35px;
+  }
+  .contest__attainment-list-item {
+    margin-bottom: 47px;
+    input {
+      margin-right: 40px;
+      margin-top: 14px;
+    }
+  }
   .contest__wrapper,
   .contest__contacts,
   .contest__letter {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
   .contest__contacts {
     margin-top: 0;
   }
   .contest__submit {
     width: 300px;
+  }
+  .contest__label--phone::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    background-color: #f2f2f2;
+    right: 64px;
+    top: 136px;
+    z-index: 111;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .contest__label--email::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    background-color: #f2f2f2;
+    right: 64px;
+    top: 7px;
+    z-index: 111;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .contest__app-list-item:first-of-type label::after {
+    left: 10px;
+    top: 8px;
+  }
+  .contest__app-list-item label::before {
+    left: -1px;
+    top: -4px;
+  }
+
+  .contest__attainment-list-item:nth-of-type(1) label::after,
+  .contest__attainment-list-item:nth-of-type(2) label::after,
+  .contest__attainment-list-item:nth-of-type(5) label::after {
+    left: 6px;
+    top: 12px;
+  }
+
+  .contest__attainment-list-item label::before {
+    left: -1px;
+    top: 2px;
   }
 }
 
@@ -308,14 +484,30 @@
   .contest__full-name {
     width: 435px;
   }
-  .contest__app .contest__title {
-    margin-left: 32px;
-    margin-right: 32px;
+  .contest__full-name-item {
+    margin-top: 30px;
+  }
+  .contest__app {
+    margin-top: 40px;
+    .contest__title {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+  }
+  .contest__app-list-item {
+    input {
+      margin-left: 21px;
+    }
+  }
+  .contest__full-name-item--desktop {
+    margin-top: 48px;
+    margin-bottom: 45px
   }
   .contest__contacts {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
     .contest__title {
       margin-left: 340px;
     }
@@ -323,8 +515,15 @@
   .contest__input--contacts {
     width: 375px;
   }
+  .contest__contacts-item {
+    margin-top: -7px;
+  }
+  .contest__contacts-item .contest__label:last-of-type {
+    margin-left: 90px;
+  }
   .contest__contacts-item:last-of-type {
     display: flex;
+    margin-bottom: 7px;
   }
   .contest__wrapper:first-of-type,
   .contest__legend {
@@ -334,27 +533,74 @@
     margin-left: 252px;
   }
   .contest__attainment-list {
+    width: 816px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    height: 190px;
-    margin: 0;
-    margin-left: 60px;
+    height: 196px;
+    margin: 0 60px;
     margin-top: 25px;
   }
   .contest__attainment-list-item {
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 21px;
+    margin-top: 19px;
+    width: 270px;
+    input {
+      margin-right: 37px;
+    }
+  }
+  .contest__attainment-list-item:nth-of-type(2),
+  .contest__attainment-list-item:nth-of-type(4),
+  .contest__attainment-list-item:nth-of-type(6) {
+    margin-bottom: 59px;
+  }
+  .contest__attainment-list-item:nth-of-type(1),
+  .contest__attainment-list-item:nth-of-type(2) {
+    margin-left: 4px;
+  }
+  .contest__attainment-list-item:nth-of-type(3),
+  .contest__attainment-list-item:nth-of-type(4) {
+    margin-left: 43px;
+  }
+  .contest__attainment-list-item:nth-of-type(5),
+  .contest__attainment-list-item:nth-of-type(6) {
+    margin-left: 25px;
   }
   .contest__letter {
     width: 100%;
+    margin-top: 0;
     .contest__title {
       margin-left: 339px;
     }
     .contest__textarea {
       width: 816px;
-      margin-left: 60px;
-      margin-right: 60px;
+      margin: 23px 60px;
+      padding-top: 25px;
+      padding-left: 17px;
     }
+  }
+  .contest__label--nodesktop {
+    display: none;
+  }
+  .contest__label--desktop {
+    display: block;
+  }
+  .contest__label--phone::before {
+    left: 371px;
+    top: 44px;
+  }
+  .contest__label--email::before {
+    right: 61px;
+    top: 44px;
+  }
+  .contest__app-list-item:first-of-type label::after {
+    left: 26px;
+    top: 10px;
+  }
+  .contest__app-list-item label::before {
+    left: 15px;
+    top: -2px;
   }
 }
