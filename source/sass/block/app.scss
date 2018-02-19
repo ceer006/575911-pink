@@ -1,7 +1,6 @@
 .app {
   text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
-
 }
 
 .app--closed {
@@ -70,7 +69,6 @@
   list-style: none;
   margin-top: 30px;
   margin-bottom: 20px;
-
 }
 
 .app__item {
@@ -99,21 +97,25 @@
   .app--opened {
     padding-top: 52px;
   }
+
   .app__title {
     font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 40px;
-  font-weight: 300;
-  color: #ffffff;
-  text-decoration: none;
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
   }
+
   .app__button {
     width: 300px;
     margin-left: 0;
   }
+
   .app__device {
     order: 2;
   }
-  .app__inner{
+
+  .app__inner {
     display: flex;
     background-color: transparent;
   }
@@ -123,15 +125,19 @@
   .app {
     margin-top: -110px;
   }
+
   .app__info {
     margin-top: 130px;
   }
+
   .app__title {
     font-size: 50px;
   }
+
   .app__button {
     margin-top: 45px;
   }
+
   .app__list {
     margin-top: 65px;
     margin-bottom: 50px;

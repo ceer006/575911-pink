@@ -57,30 +57,36 @@
     justify-content: space-between;
     margin-top: 47px;
   }
+
   .contacts__title {
     font-size: 40px;
     line-height: 48px;
-    padding: 0px 110px;
+    padding: 0 110px;
   }
+
   .contacts::after {
     height: 100px;
   }
+
   .contacts__call,
   .contacts__email {
     width: 300px;
   }
+
   .contacts__call {
     .contacts__call-description {
       display: block;
       margin-top: 6px;
     }
   }
+
   .contacts__email {
     .contacts__call-description {
       display: block;
       margin-top: 8px;
     }
   }
+
   .contacts__adress {
     width: 100%;
     margin-top: 22px;
@@ -97,22 +103,27 @@
   .contacts {
     margin-top: 60px;
   }
+
   .contacts__title {
     font-size: 50px;
     line-height: 60px;
   }
+
   .contacts__wrapper {
     margin-top: 58px;
   }
+
   .contacts__call,
   .contacts__email,
   .contacts__adress {
     width: 270px;
   }
-  .contacts__call{
+
+  .contacts__call {
     .contacts__call-text {
       margin-left: 35px;
     }
+
     .contacts__call-description {
       display: block;
       margin-top: 25px;
@@ -122,17 +133,21 @@
 
   .contacts__email {
     order: 1;
+
     .contacts__call-text {
       margin-left: -27px;
     }
+
     .contacts__call-description {
       margin-top: 27px;
       display: block;
       margin-left: -27px;
     }
   }
+
   .contacts__adress {
     margin: 0;
+
     .contacts__call-description {
       margin-top: 25px;
       padding: 0;

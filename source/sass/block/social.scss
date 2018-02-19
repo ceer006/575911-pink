@@ -17,7 +17,6 @@
   height: 50px;
 }
 
-
 .social__link {
   display: block;
   border: 2px solid #e9ebec;
@@ -29,25 +28,26 @@
   &:hover {
     border: 2px solid #283645;
   }
+
   &:focus {
     opacity: 0.3;
   }
 }
 
 .social__link--twitter {
-  background-image: url(../img/icon-twitter.svg);
+  background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
   background-position: 15px;
 }
 
 .social__link--youtube {
-  background-image: url(../img/icon-youtube.svg);
+  background-image: url("../img/icon-youtube.svg");
   background-repeat: no-repeat;
   background-position: 18px;
 }
 
 .social__link--fb {
-  background-image: url(../img/icon-facebook.svg);
+  background-image: url("../img/icon-facebook.svg");
   background-repeat: no-repeat;
   background-position: 19px;
 }
