@@ -84,6 +84,7 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "sprite",
+    "webp",
     "html",
     done
   )
