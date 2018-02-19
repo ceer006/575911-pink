@@ -164,10 +164,11 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+
     .advantages__item {
-    margin: 0;
-    width: 292px;
-    text-align: center;
+      margin: 0;
+      width: 292px;
+      text-align: center;
     }
   }
 
@@ -211,7 +212,7 @@
 
   .advantages__item:last-of-type .advantages__item-title {
     margin-left: -6px;
-    padding: 0px 30px;
+    padding: 0 30px;
   }
 
   .advantages__item:last-of-type .advantages__description {
