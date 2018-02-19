@@ -23,6 +23,11 @@
   border: 3px solid #d43560;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #d43560;
+  }
 }
 
 @media #{$tablet-widths} {

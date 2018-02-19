@@ -34,9 +34,22 @@
   }
 }
 
+.social__link--twitter {
+  background-image: url(../img/icon-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: 15px;
+}
+
 .social__link--youtube {
-  padding-left: 5px;
-  padding-top: 10px;
+  background-image: url(../img/icon-youtube.svg);
+  background-repeat: no-repeat;
+  background-position: 18px;
+}
+
+.social__link--fb {
+  background-image: url(../img/icon-facebook.svg);
+  background-repeat: no-repeat;
+  background-position: 19px;
 }
 
 @media #{$tablet-widths} {

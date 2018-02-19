@@ -85,13 +85,13 @@
           <a class="promo__download btn btn--white" href="#" target="_blank">Скачать приложение</a>
           <ul class="promo__market-list">
             <li class="promo__market-item promo__market-item--apple">
-              <a href="#" target="_blank">iTunes</a>
+              <a href="#">iTunes</a>
             </li>
             <li class="promo__market-item promo__market-item--android">
-              <a href="#" target="_blank">Google Play</a>
+              <a href="#">Google Play</a>
             </li>
             <li class="promo__market-item promo__market-item--windows">
-              <a href="#" target="_blank">Windows Store</a>
+              <a href="#">Windows Store</a>
             </li>
           </ul>
           <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -130,7 +130,7 @@
           <h3 class="analysis__title">Эффект на 24 часа!</h3>
           <p class="analysis__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится
             целые сутки!</p>
-          <a class="analysis__link" href="#" target="_blank">Узнать больше об исследовании</a>
+          <a class="analysis__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </div>
@@ -147,9 +147,9 @@
           </li>
         </ul>
         <div class="reviews__slider-controls">
-          <i class="reviews__slider-controls-item reviews__slider-controls-item--active"></i>
-          <i class="reviews__slider-controls-item"></i>
-          <i class="reviews__slider-controls-item"></i>
+          <button class="reviews__slider-controls-item reviews__slider-controls-item--active" type="button" aria-label="slider-controls-left"></button>
+          <button class="reviews__slider-controls-item" type="button" aria-label="slider-controls"></button>
+          <button class="reviews__slider-controls-item" type="button" aria-label="slider-controls-right"></button>
         </div>
       </div>
     </section>
@@ -177,12 +177,14 @@
               <p>
                 <span class="price__table-option price__table-option--no-mobile">розовый фильтр</span>
                 <span class="price__table-icon price__table-icon--yes"></span>
+                <span class="visually-hidden">yes</span>
               </p>
             </td>
             <td class="price__table-cell">
               <p>
                 <span class="price__table-option price__table-option--no-mobile">розовый фильтр</span>
                 <span class="price__table-icon price__table-icon--yes"></span>
+                <span class="visually-hidden">yes</span>
               </p>
             </td>
 
@@ -190,6 +192,7 @@
               <p>
                 <span class="price__table-option price__table-option--no-mobile">розовый фильтр</span>
                 <span class="price__table-icon price__table-icon--yes"></span>
+                <span class="visually-hidden">yes</span>
               </p>
             </td>
           </tr>
@@ -199,18 +202,21 @@
               <p>
                 <span class="price__table-option price__table-option--no-mobile">смайлики</span>
                 <span class="price__table-icon price__table-icon--no"></span>
+                <span class="visually-hidden">no</span>
               </p>
             </td>
             <td class="price__table-cell">
               <p>
                 <span class="price__table-option price__table-option--no-mobile">смайлики</span>
                 <span class="price__table-icon price__table-icon--yes"></span>
+                <span class="visually-hidden">yes</span>
               </p>
             </td>
             <td class="price__table-cell">
               <p>
                 <span class="price__table-option price__table-option--no-mobile">смайлики</span>
                 <span class="price__table-icon price__table-icon--yes"></span>
+                <span class="visually-hidden">yes</span>
               </p>
             </td>
           </tr>
@@ -220,26 +226,29 @@
               <p>
                 <span class="price__table-option price__table-option--no-mobile">комментарии</span>
                 <span class="price__table-icon price__table-icon--no"></span>
+                <span class="visually-hidden">no</span>
               </p>
             </td>
             <td class="price__table-cell">
               <p>
                 <span class="price__table-option price__table-option--no-mobile">комментарии</span>
                 <span class="price__table-icon price__table-icon--no"></span>
+                <span class="visually-hidden">no</span>
               </p>
             </td>
             <td class="price__table-cell">
               <p>
                 <span class="price__table-option price__table-option--no-mobile">комментарии</span>
                 <span class="price__table-icon price__table-icon--yes"></span>
+                <span class="visually-hidden">yes</span>
               </p>
             </td>
           </tr>
         </table>
         <div class="price__slider-controls">
-          <i class="price__slider-controls-item"></i>
-          <i class="price__slider-controls-item price__slider-controls-item--active"></i>
-          <i class="price__slider-controls-item"></i>
+          <button class="price__slider-controls-item" type="button" aria-label="slider-controls-left"></button>
+          <button class="price__slider-controls-item price__slider-controls-item--active" type="button" aria-label="slider-controls"></button>
+          <button class="price__slider-controls-item" type="button" aria-label="slider-controls-right"></button>
         </div>
       </div>
     </section>
@@ -267,7 +276,7 @@
 
   <footer class="page-footer page-footer--index">
     <div class="page-footer__inner center">
-      <a class="page-footer__logo" href="index.html">
+      <a class="page-footer__logo" aria-label="логотип Pink">
         <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>
@@ -315,27 +324,19 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" target="_blank" href="https://twitter.com" aria-label="Твиттер">
-              <img src="img/icon-twitter.svg" width="18" height="15" alt="Твиттер">
-            </a>
+            <a class="social__link social__link--twitter" target="_blank" href="https://twitter.com" aria-label="Твиттер"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--fb" target="_blank" href="https://facebook.com" aria-label="Фейсбук">
-              <img src="img/icon-facebook.svg" width="9" height="19" alt="Фейсбук">
-            </a>
+            <a class="social__link social__link--fb" target="_blank" href="https://facebook.com" aria-label="Фейсбук"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" target="_blank" href="https://youtube.com" aria-label="Ютуб">
-              <img src="img/icon-youtube.svg" width="15" height="14" alt="Ютуб">
-            </a>
+            <a class="social__link social__link--youtube" target="_blank" href="https://youtube.com" aria-label="Ютуб"></a>
           </li>
         </ul>
       </section>
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__button-copyright" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-        </a>
+        <a class="copyright__button-copyright" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </div>
     </div>
   </footer>

@@ -35,7 +35,7 @@
 
 @media #{$tablet-widths} {
   .map {
-    width: 660px;
+    width: auto;
     height: 380px;
     background: url("../img/map-marker.svg") 50% 80% no-repeat, url("../img/bg-map-tablet@1x.jpg") 50% 30% no-repeat;
 
@@ -51,7 +51,6 @@
 
 @media #{$desktop-widths} {
   .map {
-    width: 960px;
     height: 480px;
     margin-top: 45px;
     background:

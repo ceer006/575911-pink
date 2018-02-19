@@ -17,7 +17,11 @@
 }
 
 .copyright__button-copyright {
-  margin-right: 11px;
+  width: 27px;
+  height: 35px;
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
+
 }
 
 @media #{$tablet-widths} {

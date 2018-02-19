@@ -13,7 +13,7 @@
     <div class="page-header__wrapper">
       <div class="page-header__inner">
         <div class="page-header__logo">
-          <a>
+          <a href="index.html" aria-label="логотип Pink">
             <svg class="page-header__logo-svg page-header__logo-svg--index" width="147" height="40" viewBox="0 0 147 40" enable-background="new 0 0 147 40">
               <g>
                 <path class="page-header__logo-name" fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"
@@ -111,8 +111,8 @@
             <legend class="contest__title">ваши безбашенные достижения в путешествии</legend>
             <ul class="contest__attainment-list">
               <li class="contest__attainment-list-item">
-                <input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-selfie" id="selphi" checked>
-                <label for="selphi">Сделал селфи с акулой</label>
+                <input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-selfie" id="selfie" checked>
+                <label for="selfie">Сделал селфи с акулой</label>
               </li>
               <li class="contest__attainment-list-item">
                 <input class="contest__attainment-list-input contest__attainment-list-input--checkbox" type="checkbox" name="checkbox-beach" id="beach" checked>
@@ -169,17 +169,14 @@
         </div>
         <fieldset class="contest__letter">
           <legend class="contest__title">опишите свои эмоции</legend>
-          <label class="contest__label contest__label--nodesktop">
-            <textarea class="contest__textarea" name="letter" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </label>
-          <label class="contest__label contest__label--desktop">
-            <textarea class="contest__textarea" name="letter" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <label class="contest__label">
+            <textarea class="contest__textarea" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </label>
         </fieldset>
         <div class="contest__legend">
           <input class="contest__submit" type="submit" value="Отправить форму">
           <p class="contest__legend-text">
-            <sup>*</sup> — обязательные поля</p>
+            <sup>*</sup> — обязательные <span>для заполнения</span> поля</p>
         </div>
       </form>
     </div>
@@ -187,7 +184,7 @@
 
   <footer class="page-footer page-footer--form">
     <div class="page-footer__inner center">
-      <a class="page-footer__logo" href="index.html">
+      <a class="page-footer__logo" href="index.html" aria-label="логотип Pink">
         <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>
@@ -235,27 +232,19 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Твиттер">
-              <img src="img/icon-twitter.svg" width="18" height="15" alt="Твиттер">
-            </a>
+            <a class="social__link social__link--twitter" target="_blank" href="#" aria-label="Твиттер"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--fb" href="#" aria-label="Фейсбук">
-              <img src="img/icon-facebook.svg" width="9" height="19" alt="Фейсбук">
-            </a>
+            <a class="social__link social__link--fb" target="_blank" href="#" aria-label="Фейсбук"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" aria-label="Ютуб">
-              <img src="img/icon-youtube.svg" width="15" height="14" alt="Ютуб">
-            </a>
+            <a class="social__link social__link--youtube" target="_blank" href="#" aria-label="Ютуб"></a>
           </li>
         </ul>
       </section>
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__button-copyright" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-        </a>
+        <a class="copyright__button-copyright" target="_blank" href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </div>
     </div>
   </footer>

@@ -105,15 +105,14 @@
 
 .user-photo__like,
 .user-panorama__like {
-  margin: 0;
-  margin-left: -5px;
-  padding: 0;
-  border: none;
-  width: 25px;
-  height: 24px;
-  background-color: transparent;
   cursor: pointer;
   position: relative;
+  width: 13px;
+  height: 13px;
+  background-image: url(../img/icon-heart.svg);
+  background-repeat: no-repeat;
+  margin-bottom: 5px;
+  margin-top: auto;
 }
 
 @media #{$tablet-widths} {
@@ -156,7 +155,6 @@
       order: 1;
       margin-left: auto;
       margin-right: 25px;
-      margin-top: auto;
     }
     .user-photo__cool {
       padding: 0;
